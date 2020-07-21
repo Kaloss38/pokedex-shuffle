@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="icon" href="favicon.ico" />
+    <title>Pokedex</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand">Pokedex</a>
+        <form class="form-inline mx-lg-auto">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </nav>
+      <!-- region button -->
+      <nav class="navbar navbar-light bg-light nav-region">
+        <button id="urlNational" class="btn btn-primary">National</button>
+        <button id="urlKanto" class="btn btn-primary">Kanto</button>
+        <button id="urlJohto" class="btn btn-primary">Johto</button>
+        <button id="urlHoenn" class="btn btn-primary">Hoenn</button>
+        <button id="urlSinnoh" class="btn btn-primary">Sinnoh</button>
+        <button id="urlKalos" class="btn btn-primary">Kalos</button>
+        <button id="urlAlola" class="btn btn-primary">Alola</button>
+      </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="container content">
+          <div class="container button-type-group">
+            <button class="btn btn-primary normal">Normal</button>
+            <button class="btn btn-primary fighting">Combat</button>
+            <button class="btn btn-primary flying">Vol</button>
+            <button class="btn btn-primary poison">Poison</button>
+            <button class="btn btn-primary ground">Sol</button>
+            <button class="btn btn-primary rock">Roche</button>
+            <button class="btn btn-primary bug">Insecte</button>
+            <button class="btn btn-primary ghost">Spectre</button>
+            <button class="btn btn-primary steel">Acier</button>
+            <button class="btn btn-primary fire">Feu</button>
+            <button class="btn btn-primary water">Eau</button>
+            <button class="btn btn-primary grass">Plante</button>
+            <button class="btn btn-primary electric">Électrique</button>
+            <button class="btn btn-primary psychic">Psy</button>
+            <button class="btn btn-primary ice">Glace</button>
+            <button class="btn btn-primary dragon">Dragon</button>
+            <button class="btn btn-primary dark">Ténèbre</button>
+            <button class="btn btn-primary fairy">Fée</button>
+          </div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Pokemon</th>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Type</th>
+                  </tr>
+                </thead>
+                <tbody id="table-tbody">
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>

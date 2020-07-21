@@ -1,0 +1,177 @@
+html{
+    height: 100%;
+}
+
+.row{
+    height: 100%;
+}
+
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.content{
+  margin-top: 150px;
+}
+
+.navbar{
+  background-color: #DB320D !important;
+}
+
+.nav-region{
+  justify-content: space-around !important;
+  background-color: #818181 !important;
+}
+
+#sidebarMenu{
+ height: 100%;
+ position: fixed;
+}
+
+.form-inline .form-control{
+  width: 400px;
+}
+
+.button-type-group{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button-type-group button{
+  border: none;
+}
+
+.content button:hover{
+  background-color: #7D7A7A;
+}
+
+.table th{
+  vertical-align: middle !important;
+}
+
+.table td{
+  vertical-align: middle !important;
+}
+
+/*TYPES */
+
+.types{
+  display: flex; 
+}
+
+.normal{
+   background-color: #b8917b;
+   color: white;
+   padding: 15px;
+}
+
+.fighting{
+ background-color: #b8917b;
+ color: white;
+ padding: 15px;
+}
+
+.flying{
+ background-color: #7d6de3;
+ color: white;
+ padding: 15px;
+}
+
+.poison{
+ background-color: #6a24c7;
+ color: white;
+ padding: 15px;
+}
+
+.ground{
+ background-color: #d9c375;
+ color: white;
+ padding: 15px;
+}
+
+.rock{
+ background-color: #ab8602;
+ color: white;
+ padding: 15px;
+}
+
+.bug{
+ background-color: #9ec746;
+ color: white;
+ padding: 15px;
+}
+
+.ghost{
+ background-color: #6516cc;
+ color: white;
+ padding: 15px;
+}
+
+.steel{
+ background-color: #c1bbc9;
+ color: white;
+ padding: 15px;
+}
+
+.fire{
+ background-color: #e06404;
+ color: white;
+ padding: 15px;
+}
+
+.water{
+ background-color: #044ae0;
+ color: white;
+ padding: 15px;
+}
+
+.grass{
+ background-color: #039906;
+ color: white;
+ padding: 15px;
+}
+
+.electric{
+ background-color: #bdb300;
+ color: white;
+ padding: 15px;
+}
+
+.psychic{
+ background-color: #f067be;
+ color: white;
+ padding: 15px;
+}
+
+.ice{
+ background-color: #7dd4ff;
+ color: white;
+ padding: 15px;
+}
+
+.dragon{
+ background-color: #6838b5;
+ color: white;
+ padding: 15px;
+}
+
+.dark{
+ background-color: #2f2f30;
+ color: white;
+ padding: 15px;
+}
+
+.fairy{
+ background-color: #fcb6dd;
+ color: white;
+ padding: 15px;
+}                  
+
+
+.shadow{
+ background-color: #703e87;
+ color: white;
+ padding: 15px;
+}
