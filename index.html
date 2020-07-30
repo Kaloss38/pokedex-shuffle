@@ -32,25 +32,25 @@
     </header>
     <div class="container-fluid">
         <div class="container content">
-          <div class="container button-type-group">
-            <button class="btn btn-primary normal">Normal</button>
-            <button class="btn btn-primary fighting">Combat</button>
-            <button class="btn btn-primary flying">Vol</button>
-            <button class="btn btn-primary poison">Poison</button>
-            <button class="btn btn-primary ground">Sol</button>
-            <button class="btn btn-primary rock">Roche</button>
-            <button class="btn btn-primary bug">Insecte</button>
-            <button class="btn btn-primary ghost">Spectre</button>
-            <button class="btn btn-primary steel">Acier</button>
-            <button class="btn btn-primary fire">Feu</button>
-            <button class="btn btn-primary water">Eau</button>
-            <button class="btn btn-primary grass">Plante</button>
-            <button class="btn btn-primary electric">Électrique</button>
-            <button class="btn btn-primary psychic">Psy</button>
-            <button class="btn btn-primary ice">Glace</button>
-            <button class="btn btn-primary dragon">Dragon</button>
-            <button class="btn btn-primary dark">Ténèbre</button>
-            <button class="btn btn-primary fairy">Fée</button>
+          <div class="button-type-group">
+            <button id="normal" class="btn btn-primary normal">Normal</button>
+            <button id="fighting" class="btn btn-primary fighting">Combat</button>
+            <button id="flying" class="btn btn-primary flying">Vol</button>
+            <button id="poison" class="btn btn-primary poison">Poison</button>
+            <button id="ground" class="btn btn-primary ground">Sol</button>
+            <button id="rock" class="btn btn-primary rock">Roche</button>
+            <button id="bug" class="btn btn-primary bug">Insecte</button>
+            <button id="ghost" class="btn btn-primary ghost">Spectre</button>
+            <button id="steel" class="btn btn-primary steel">Acier</button>
+            <button id="fire" class="btn btn-primary fire">Feu</button>
+            <button id="water" class="btn btn-primary water">Eau</button>
+            <button id="grass" class="btn btn-primary grass">Plante</button>
+            <button id="electric" class="btn btn-primary electric">Électrique</button>
+            <button id="psychic" class="btn btn-primary psychic">Psy</button>
+            <button id="ice" class="btn btn-primary ice">Glace</button>
+            <button id="dragon" class="btn btn-primary dragon">Dragon</button>
+            <button id="dark" class="btn btn-primary dark">Ténèbre</button>
+            <button id="fairy" class="btn btn-primary fairy">Fée</button>
           </div>
             <table class="table">
                 <thead>
@@ -61,13 +61,14 @@
                     <th scope="col">Type</th>
                   </tr>
                 </thead>
-                <tbody id="table-tbody">
+                <tbody id="table-tbody" class="col-12 my-shuffle-container">
                 </tbody>
-              </table>
+            </table>
         </div>
     </div>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./node_modules/shufflejs/dist/shuffle.min.js"></script>
     <script src="dist/bundle.js"></script>
 </body>
 </html>

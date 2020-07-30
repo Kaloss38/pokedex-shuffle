@@ -3,7 +3,7 @@ import LoadPokemons from './LoadPokemons.js';
 import ShuffleJs from './Shuffle.js'
 
 $(document).ready(function(){
-      
+
       //Set pokemons url by region
       const urlsRegion = {
             urlNational : 'https://pokeapi.co/api/v2/pokemon?limit=807',
@@ -21,6 +21,8 @@ $(document).ready(function(){
 
       pokedex.fetchPokemonApi(urlsRegion.urlNational);
 
+      new ShuffleJs(document.getElementById('table-tbody'));
+
       // Load pokemons by regions when clicked
       $('.nav-region button').each(function(){
             $(this).on('click', function(){
@@ -34,5 +36,6 @@ $(document).ready(function(){
             })
       })
 
+      
       
 })
