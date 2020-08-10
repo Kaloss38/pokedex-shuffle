@@ -4,7 +4,7 @@ export default class ShuffleJs {
   constructor(element) {
     this.element = element;
     this.shuffle = new Shuffle(element, {
-      itemSelector: '.table-tr'
+      itemSelector: '.card'
     });
 
     // Log events.

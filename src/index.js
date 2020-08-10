@@ -1,6 +1,6 @@
 import "@babel/polyfill";
 import LoadPokemons from './LoadPokemons.js';
-import ShuffleJs from './Shuffle.js'
+import ShuffleJs from './Shuffle.js';
 
 $(document).ready(function(){
 
@@ -21,13 +21,11 @@ $(document).ready(function(){
 
       pokedex.fetchPokemonApi(urlsRegion.urlNational);
 
-      new ShuffleJs(document.getElementById('table-tbody'));
-
       // Load pokemons by regions when clicked
       $('.nav-region button').each(function(){
             $(this).on('click', function(){
                   const attrId = $(this).attr('id');
-                  $('#table-tbody').empty();
+                  $('#main').empty();
                   Object.keys(urlsRegion).forEach( key => {
                         if(attrId == key){
                               pokedex.fetchPokemonApi(urlsRegion[key]);      
@@ -36,6 +34,6 @@ $(document).ready(function(){
             })
       })
 
-      
+      // window.ShuffleJs = new ShuffleJs(document.getElementById('main'));
       
 })
